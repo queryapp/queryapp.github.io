@@ -43,6 +43,7 @@ $(document).ready(function() {
 });
 
 $(document).on( "resize", function() {
+  alert("Changed");
   $('#rotate').rotaterator({fadeSpeed:500, pauseSpeed:1000});
   if($(window).height() < $(window).width()){
     $('.resume_frame').css('height', $(window).height()*.6);
