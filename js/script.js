@@ -36,18 +36,18 @@
 $(document).ready(function() {
   $('#rotate').rotaterator({fadeSpeed:500, pauseSpeed:1000});
   if($(window).height() < $(window).width()){
-    $('.resume_frame').css('height', $(window).height()*.7);
+    $('.resume_frame').css('height', $(window).height()*.6);
   }else{
-    $('.resume_frame').css('height', $(window).width()*.7);
+    $('.resume_frame').css('height', $(window).width()*.6);
   }
 });
 
 $(document).on( "resize", function() {
   $('#rotate').rotaterator({fadeSpeed:500, pauseSpeed:1000});
   if($(window).height() < $(window).width()){
-    $('.resume_frame').css('height', $(window).height()*.7);
+    $('.resume_frame').css('height', $(window).height()*.6);
   }else{
-    $('.resume_frame').css('height', $(window).width()*.7);
+    $('.resume_frame').css('height', $(window).width()*.6);
   }
 });
                    
