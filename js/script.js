@@ -38,9 +38,6 @@ $(document).ready(function() {
 })(jQuery);
 
 
-$('.resume_frame').css('height', $(window).height()*.4);
-
-
 $(document).ready(function() {
   $('#rotate').rotaterator({fadeSpeed:500, pauseSpeed:1000});
 });
