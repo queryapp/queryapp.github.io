@@ -42,7 +42,7 @@ $(document).ready(function() {
   }
 });
 
-$(document).ready(function() {
+$(document).resize(function() {
   $('#rotate').rotaterator({fadeSpeed:500, pauseSpeed:1000});
   if($(window).height() < $(window).width()){
     $('.resume_frame').css('height', $(window).height()*.7);
