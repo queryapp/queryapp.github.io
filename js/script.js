@@ -45,5 +45,14 @@ $(document).ready(function() {
   }else{
     $('.resume_frame').css('height', $(window).width()*.5);
   }
-  
 });
+
+$(document).resize(fuction(){
+                   $('#rotate').rotaterator({fadeSpeed:500, pauseSpeed:1000});
+  if($(window).height() < $(window).width()){
+    $('.resume_frame').css('height', $(window).height()*.5);
+  }else{
+    $('.resume_frame').css('height', $(window).width()*.5);
+  }
+});
+                   
