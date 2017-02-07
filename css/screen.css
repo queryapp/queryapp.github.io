@@ -116,7 +116,7 @@ body {
 */
 /* line 5, ../sass/elements/_a.scss */
 a {
-  color: #E3DAD6;
+  color: #E3DAD6; /*gray background*/
   text-decoration: none;
 }
 
@@ -200,7 +200,7 @@ p {
 
 /* line 14, ../sass/classes/_bgcol.scss */
 .bgcol1 {
-  background-color: #DB5151; /*soft red*/
+  background-color: #CC0000; /*soft red*/
 }
 
 /* line 18, ../sass/classes/_bgcol.scss */
