@@ -42,7 +42,6 @@ $(document).ready(function() {
 });                   
 
 function resizeResume(){
-  alert("Changed");
     if($(window).height() < $(window).width()){
       $('.resume_frame').css('height', $(window).height()*.6);
     }else{
