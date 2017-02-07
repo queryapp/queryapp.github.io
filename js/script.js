@@ -34,14 +34,18 @@
 
 
 $(document).ready(function() {
-  alert("Start");
   $('#rotate').rotaterator({fadeSpeed:500, pauseSpeed:1000});
-  $(document).on( "resize", function() {
-    alert("Changed");
+  resizeResume();
+  $(window).resize(function() {
+    resizeResume();
+  });
+});                   
+
+function resizeResume(){
+  alert("Changed");
     if($(window).height() < $(window).width()){
       $('.resume_frame').css('height', $(window).height()*.6);
     }else{
       $('.resume_frame').css('height', $(window).width()*.6);
     }
-  });
-});                   
+};
