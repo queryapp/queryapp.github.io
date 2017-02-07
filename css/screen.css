@@ -200,7 +200,7 @@ p {
 
 /* line 14, ../sass/classes/_bgcol.scss */
 .bgcol1 {
-  background-color: #CC0000; /*soft red*/
+  background-color: #CC0000; /*utah red*/
 }
 
 /* line 18, ../sass/classes/_bgcol.scss */
@@ -228,7 +228,7 @@ Basic list of hex colors:
 #1e3062: dark blue
 #B7B5B5: light grey
 #0072C5: soft blue
-#DB5151: soft red
+#CC0000: utah red
 #000000: black
 #ffffff: white
 
@@ -247,7 +247,7 @@ Google 'hex color picker'
 
 /* line 10, ../sass/classes/_borders.scss */
 .border-bottom {
-  border-bottom: 1px solid #fff;
+  border-bottom: 3px solid #fff;
 }
 
 /**
