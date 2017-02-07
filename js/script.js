@@ -37,9 +37,9 @@ $(document).ready(function() {
   });
 })(jQuery);
 
-<script type="text/javascript" language="javascript"> 
+
 $('.resume_frame').css('height', $(window).height()*.4);
-</script>
+
 
 $(document).ready(function() {
   $('#rotate').rotaterator({fadeSpeed:500, pauseSpeed:1000});
