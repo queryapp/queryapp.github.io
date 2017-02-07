@@ -40,4 +40,5 @@ $(document).ready(function() {
 
 $(document).ready(function() {
   $('#rotate').rotaterator({fadeSpeed:500, pauseSpeed:1000});
+  $('.resume_frame').css('height', $(window).height()*.5);
 });
