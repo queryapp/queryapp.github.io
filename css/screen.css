@@ -173,8 +173,9 @@ p {
 }
 
 .project {
-  display: inline-block;
-  width: 48%;
+  float:1;
+  width: 50%;
+  margin: 3px;
 }
 
 /**
