@@ -173,7 +173,7 @@ p {
 }
 
 .project {
-  float:1;
+  flex:1;
   width: 50%;
   margin: 3px;
 }
