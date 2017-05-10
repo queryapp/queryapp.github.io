@@ -172,6 +172,11 @@ p {
   visibility: hidden;
 }
 
+.project {
+  display: inline-block;
+  width: 48%;
+}
+
 /**
  * @file
  * This is the styling for .benefit classes.
