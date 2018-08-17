@@ -11,7 +11,7 @@
   <script src="js/script.js"></script>
   <link rel="icon" type="image/png" href="/images/icon.png" />
   <style>
-    .link-box:link, .link-box:visited {
+    .link-box:link, .link-box:visited, .link-box {
       background-color: #CC0000;
       color: white;
       padding: 5px 5px;
@@ -34,9 +34,41 @@
       background-size: contain;
       background-repeat: no-repeat;
     }
+
+    #topBtn {
+      display: none;
+      position: fixed;
+      bottom: 5px;
+      right: 5px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 4px;
+      width: auto;
+    }
   </style>
+  <script>
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("topBtn").style.display = "block";
+        } else {
+            document.getElementById("topBtn").style.display = "none";
+        }
+    }
+
+    function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+    }
+  </script>
 </head>
 <body>
+  <button class="link-box" onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
   <section class="bgcol2">
     <div class="contained" style="color: white;  ">
       <a class="link-box" href="#about">About Me</a>
