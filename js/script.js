@@ -50,7 +50,7 @@ function resizeResume(){
 };
 
 window.onscroll = function() {scrollFunction()};
-body.onclick = hideMenuFunction();
+window.addEventListener('click', hideMenuFunction);
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -66,9 +66,13 @@ function topFunction() {
 };
 
 function showMenuFunction() {
-  document.getElementById("menu").style.display = "block";
+  // document.getElementById("menu").style.display = "block";
+  $("#menu").show(500);
 };
 
-function hideMenuFunction() {
-  document.getElementById("menu").style.display = "none";
+function hideMenuFunction(event) {
+  if (!event.target.matches('#menuBtn')) {
+    // document.getElementById("menu").style.display = "none";
+    $("#menu").hide(500);
+  }
 };
