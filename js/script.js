@@ -50,6 +50,7 @@ function resizeResume(){
 };
 
 window.onscroll = function() {scrollFunction()};
+body.onclick = hideMenuFunction();
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
