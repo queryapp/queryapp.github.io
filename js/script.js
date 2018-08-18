@@ -66,13 +66,11 @@ function topFunction() {
 };
 
 function showMenuFunction() {
-  // document.getElementById("menu").style.display = "block";
   $("#menu").show(500);
 };
 
 function hideMenuFunction(event) {
   if (!event.target.matches('#menuBtn')) {
-    // document.getElementById("menu").style.display = "none";
     $("#menu").hide(500);
   }
 };

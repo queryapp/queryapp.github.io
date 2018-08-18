@@ -509,7 +509,7 @@ h6 {
 
 #menuBtn {
   position: fixed;
-  top: 10px;
+  top: 5px;
   right: 5px;
   z-index: 99;
   font-size: 18px;
