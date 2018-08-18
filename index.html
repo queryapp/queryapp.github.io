@@ -50,26 +50,74 @@
       width: auto;
       box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
     }
+
+    #menuBtn {
+      position: fixed;
+      top: 10px;
+      right: 5px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 4px;
+      width: auto;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, .5);
+    }
+
+    #menu {
+      display: none;
+      position: fixed;
+      right: 0px;
+      top: 0px;
+      background-color: black;
+      width: 175px;
+      height: -webkit-fill-available;
+      z-index: 10000;
+    }
   </style>
   <script>
     window.onscroll = function() {scrollFunction()};
+    document.body.addEventListener('click', hideMenuFunction());
 
     function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-            document.getElementById("topBtn").style.display = "block";
-        } else {
-            document.getElementById("topBtn").style.display = "none";
-        }
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById("topBtn").style.display = "block";
+      } else {
+          document.getElementById("topBtn").style.display = "none";
+      }
     }
 
     function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+
+    function showMenuFunction() {
+      document.getElementById("menu").style.display = "block";
+    }
+
+    function hideMenuFunction() {
+      document.getElementById("menu").style.display = "none";
     }
   </script>
 </head>
 <body>
   <button class="link-box" onclick="topFunction()" id="topBtn" title="Go to top">Top</button>
+  <button class="link-box" onclick="showMenuFunction()" id="menuBtn" title="Open the menu">Menu</button>
+
+  <section id="menu">
+    <div class="contained" style="color: white;  ">
+      <a class="link-box" href="#about">About Me</a>
+      <a class="link-box" href="#projects">Projects</a>
+      <a class="link-box" href="#experience">Experience</a>
+      <a class="link-box" href="#resume">Resume</a>
+      <a class="link-box" href="#contact">Contact Me</a>
+      <a class="link-box" href="test">Test</a>
+    </div>
+  </section>
+
   <section class="bgcol2">
     <div class="contained" style="color: white;  ">
       <a class="link-box" href="#about">About Me</a>
