@@ -51,7 +51,6 @@ function resizeResume(){
 
 window.onscroll = function() {
   scrollFunction();
-  alert("test');
   $("#menu").hide(500);
 };
 window.addEventListener('click', hideMenuFunction);
