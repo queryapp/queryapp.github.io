@@ -49,9 +49,12 @@ function resizeResume(){
     }
 };
 
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {
+  scrollFunction();
+  $("#menu").hide(500);
+};
 window.addEventListener('click', hideMenuFunction);
-window.addEventListener('scroll', hideMenuFunction);
+
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
