@@ -51,6 +51,7 @@ function resizeResume(){
 
 window.onscroll = function() {scrollFunction()};
 window.addEventListener('click', hideMenuFunction);
+window.addEventListener('scroll', hideMenuFunction);
 
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
