@@ -533,3 +533,7 @@ h6 {
   z-index: 10000;
   border-left: solid white 1px;
 }
+
+#about {
+  height: -webkit-fill-available
+}
